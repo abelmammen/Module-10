@@ -2,7 +2,13 @@
 *{
   box-sizing: border-box;
 }
-.container {
+picture {
+  border: 1px solid blue;
+}
+figcaption {
+  border: 1px solid yellow;
+}
+.about-container {
   display: grid; /* Use grid layout for small viewports */
   grid-template-columns: 1fr; /* One column layout */
   gap: 10px; /* Space between grid items */
@@ -18,24 +24,38 @@
 /* Styles for desktop view */
 @media (min-width: 1200px) {
   .responsive-image {
-      width: 80%; /* Adjust width for desktop */
+      width: 100%; /*Adjust width for desktop */ /*unnecessary*/
       object-fit: cover; /* Ensure the image covers the area */
+  }
+  .about-container {
+    display: grid; /* Use grid layout for small viewports */
+    grid-template-columns: 1fr 1fr; /* One column layout */
+    gap: 10px; /* Space between grid items */
+    background-image: url('small-background.jpg'); /* Background image for small viewports */
+    background-size: cover; /* Make background cover the area */
   }
 }
 
 /* Styles for tablet view */
 @media (min-width: 600px) and (max-width: 1199px) {
   .responsive-image {
-      width: 60%; /* Adjust width for tablet */
+      width: 100%; /* Adjust width for tablet */ /*unnecessary*/
       height: auto; /* Maintain aspect ratio */
       object-fit: cover; /* Ensure the image covers the area */
+  }
+  .about-container {
+    display: grid; /* Use grid layout for small viewports */
+    grid-template-columns: 1fr 1fr; /* One column layout */
+    gap: 10px; /* Space between grid items */
+    background-image: url('small-background.jpg'); /* Background image for small viewports */
+    background-size: cover; /* Make background cover the area */
   }
 }
 
 /* Styles for mobile view */
 @media (max-width: 599px) {
   .responsive-image {
-      width: 100%; /* Full width for mobile */
+      width: 100%; /* Full width for mobile */ /*unnecessary*/
       height: auto; /* Maintain aspect ratio */
       object-fit: cover; /* Ensure the image covers the area */
   }
@@ -127,7 +147,8 @@ body {
   }
   figcaption {
     color: #f2f2f2;
-    padding: 0.5rem;
+    /*padding: 0.5rem;*/
+    text-align: center;
   }
   .button {
     display: inline-block;

@@ -1,7 +1,6 @@
-<!-- includes a few changes to the design since M09 -->
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gulp Roast</title>
@@ -9,8 +8,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <!--Head Ends Here-->
+<body><!-- includes a few changes to the design since M09 -->
 <header>
   <nav>
     <ul>
@@ -25,8 +26,6 @@
   <section class="main">
     <!-- About Page HTML -->
 <div class="about-container">
-  
-</div>
     <article>
       <h1>About Us</h1>
       <p>Life without coffee is a gloomy place. That’s why Gulp Roast has been proudly serving up fresh coffee to the <a href="https://goo.gl/maps/3rAyszfwSDx8Si2Y9" target="_blank">San Francisco area</a> since 2000. Our coffee is locally sourced with the most delicious blends coming directly to your home, right from coffee farmers near you. Our coffee makes even the most difficult days just a tad easier to get through.</p>
@@ -37,16 +36,21 @@
     </article>
 
     <figure>
-      <div class="about-container"  
-      <picture>
-          <source media="(max-width: 600px)" srcset="https://assets.codepen.io/6306176/gulp-pouring-coffee-small.jpg">
-          <source media="(max-width: 1200px)" srcset="https://assets.codepen.io/6306176/gulp-pouring-coffee-medium.jpg">
-          <img src="https://assets.codepen.io/6306176/gulp-pouring-coffee-vertical.jpg" alt="Making pour-over coffee at our shop." class="responsive-image" />
+      <div>
+      <picture> 
+          <source media="(min-width: 1200px)" srcset="images/gulp-pouring-coffee-horizontal.jpg">
+          <source media="(min-width: 600px)" srcset="images/gulp-pouring-coffee-vertical.jpg">
+          <img src="images/gulp-pouring-coffee-horizontal-sm.jpg" alt="Making pour-over coffee at our shop." class="responsive-image" />
         </picture>
+        <!--<picture> 
+          <source media="(min-width: 650px)" srcset="img_food.jpg">
+          <source media="(min-width: 465px)" srcset="img_car.jpg">
+          <img src="img_girl.jpg" style="width:auto;">
+        </picture>-->
         <figcaption>Our pour-over coffee is known for its freshness and amazing taste.</figcaption>
       </div>
-        </figure>
-      </figure>
+    </figure>
+      </div>
   </section>
 </div>
 <footer>
